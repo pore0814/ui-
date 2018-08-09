@@ -1,0 +1,19 @@
+platform :ios, '9.0'
+
+target 'SimpleNoteTakingApp' do
+  use_frameworks!
+  inhibit_all_warnings!
+
+
+  pod 'Realm'
+  pod 'RealmSwift'
+
+  target 'SimpleNoteTakingAppTests' do
+    inherit! :search_paths
+    pod 'KIF'
+    pod 'Nimble'
+
+
+  end
+
+end
